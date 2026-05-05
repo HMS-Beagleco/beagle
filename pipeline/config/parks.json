@@ -1,0 +1,72 @@
+[
+  {
+    "id": "yellowstone",
+    "name": "Yellowstone National Park",
+    "nps_code": "yell",
+    "ebird_region": "US-WY",
+    "bbox": { "north": 45.1099, "south": 44.1326, "east": -109.8204, "west": -111.1563 }
+  },
+  {
+    "id": "grand-teton",
+    "name": "Grand Teton National Park",
+    "nps_code": "grte",
+    "ebird_region": "US-WY",
+    "bbox": { "north": 44.0, "south": 43.5745, "east": -110.5024, "west": -110.8601 }
+  },
+  {
+    "id": "glacier",
+    "name": "Glacier National Park",
+    "nps_code": "glac",
+    "ebird_region": "US-MT",
+    "bbox": { "north": 49.0009, "south": 48.2259, "east": -113.2474, "west": -114.5009 }
+  },
+  {
+    "id": "rocky-mountain",
+    "name": "Rocky Mountain National Park",
+    "nps_code": "romo",
+    "ebird_region": "US-CO",
+    "bbox": { "north": 40.5538, "south": 40.1578, "east": -105.4934, "west": -105.9145 }
+  },
+  {
+    "id": "great-smoky-mountains",
+    "name": "Great Smoky Mountains National Park",
+    "nps_code": "grsm",
+    "ebird_region": "US-TN",
+    "bbox": { "north": 35.7928, "south": 35.4325, "east": -83.1021, "west": -83.9536 }
+  },
+  {
+    "id": "yosemite",
+    "name": "Yosemite National Park",
+    "nps_code": "yose",
+    "ebird_region": "US-CA",
+    "bbox": { "north": 38.1851, "south": 37.4954, "east": -119.2067, "west": -119.8881 }
+  },
+  {
+    "id": "olympic",
+    "name": "Olympic National Park",
+    "nps_code": "olym",
+    "ebird_region": "US-WA",
+    "bbox": { "north": 48.1615, "south": 47.4862, "east": -123.3217, "west": -124.7093 }
+  },
+  {
+    "id": "denali",
+    "name": "Denali National Park",
+    "nps_code": "dena",
+    "ebird_region": "US-AK",
+    "bbox": { "north": 63.8917, "south": 62.8333, "east": -149.0193, "west": -151.1927 }
+  },
+  {
+    "id": "everglades",
+    "name": "Everglades National Park",
+    "nps_code": "ever",
+    "ebird_region": "US-FL",
+    "bbox": { "north": 25.9606, "south": 25.0563, "east": -80.2507, "west": -81.3578 }
+  },
+  {
+    "id": "acadia",
+    "name": "Acadia National Park",
+    "nps_code": "acad",
+    "ebird_region": "US-ME",
+    "bbox": { "north": 44.4097, "south": 44.2076, "east": -68.1485, "west": -68.3765 }
+  }
+]

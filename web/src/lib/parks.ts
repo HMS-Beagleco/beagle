@@ -1,0 +1,98 @@
+import { Park } from '@/types'
+
+export const LAUNCH_PARKS: Park[] = [
+  {
+    id: 'yellowstone',
+    slug: 'yellowstone',
+    name: 'Yellowstone National Park',
+    state: 'WY/MT/ID',
+    description: 'Home to the largest concentration of wildlife in the lower 48, including grizzly bears, wolves, bison, and elk.',
+    nps_park_code: 'yell',
+    bounding_box: { north: 45.1099, south: 44.1326, east: -109.8204, west: -111.1563 },
+  },
+  {
+    id: 'grand-teton',
+    slug: 'grand-teton',
+    name: 'Grand Teton National Park',
+    state: 'WY',
+    description: 'Dramatic peaks and glacial lakes set the scene for abundant moose, pronghorn, black bears, and hundreds of bird species.',
+    nps_park_code: 'grte',
+    bounding_box: { north: 44.0, south: 43.5745, east: -110.5024, west: -110.8601 },
+  },
+  {
+    id: 'glacier',
+    slug: 'glacier',
+    name: 'Glacier National Park',
+    state: 'MT',
+    description: 'Going-to-the-Sun Road corridors teeming with grizzly bears, mountain goats, bighorn sheep, and gray wolves.',
+    nps_park_code: 'glac',
+    bounding_box: { north: 49.0009, south: 48.2259, east: -113.2474, west: -114.5009 },
+  },
+  {
+    id: 'rocky-mountain',
+    slug: 'rocky-mountain',
+    name: 'Rocky Mountain National Park',
+    state: 'CO',
+    description: 'Tundra and alpine meadows harbor elk, moose, bighorn sheep, and black bears across varied elevation zones.',
+    nps_park_code: 'romo',
+    bounding_box: { north: 40.5538, south: 40.1578, east: -105.4934, west: -105.9145 },
+  },
+  {
+    id: 'great-smoky-mountains',
+    slug: 'great-smoky-mountains',
+    name: 'Great Smoky Mountains National Park',
+    state: 'TN/NC',
+    description: 'The most visited national park features one of the largest black bear populations in the Eastern US.',
+    nps_park_code: 'grsm',
+    bounding_box: { north: 35.7928, south: 35.4325, east: -83.1021, west: -83.9536 },
+  },
+  {
+    id: 'yosemite',
+    slug: 'yosemite',
+    name: 'Yosemite National Park',
+    state: 'CA',
+    description: 'Granite valleys and sequoia groves are home to black bears, mule deer, peregrine falcons, and rare Sierra Nevada bighorn sheep.',
+    nps_park_code: 'yose',
+    bounding_box: { north: 38.1851, south: 37.4954, east: -119.2067, west: -119.8881 },
+  },
+  {
+    id: 'olympic',
+    slug: 'olympic',
+    name: 'Olympic National Park',
+    state: 'WA',
+    description: 'Three distinct ecosystems — rainforest, alpine, and coast — support Roosevelt elk, black bears, river otters, and orcas offshore.',
+    nps_park_code: 'olym',
+    bounding_box: { north: 48.1615, south: 47.4862, east: -123.3217, west: -124.7093 },
+  },
+  {
+    id: 'denali',
+    slug: 'denali',
+    name: 'Denali National Park',
+    state: 'AK',
+    description: 'North America\'s highest peak presides over vast wilderness with grizzly bears, caribou, wolves, Dall sheep, and moose.',
+    nps_park_code: 'dena',
+    bounding_box: { north: 63.8917, south: 62.8333, east: -149.0193, west: -151.1927 },
+  },
+  {
+    id: 'everglades',
+    slug: 'everglades',
+    name: 'Everglades National Park',
+    state: 'FL',
+    description: 'The only subtropical preserve in North America, home to manatees, American crocodiles, Florida panthers, and 360+ bird species.',
+    nps_park_code: 'ever',
+    bounding_box: { north: 25.9606, south: 25.0563, east: -80.2507, west: -81.3578 },
+  },
+  {
+    id: 'acadia',
+    slug: 'acadia',
+    name: 'Acadia National Park',
+    state: 'ME',
+    description: 'Maine\'s rocky coastline and boreal forests attract migrating raptors, harbor seals, porpoises, and nesting peregrine falcons.',
+    nps_park_code: 'acad',
+    bounding_box: { north: 44.4097, south: 44.2076, east: -68.1485, west: -68.3765 },
+  },
+]
+
+export function getParkBySlug(slug: string): Park | undefined {
+  return LAUNCH_PARKS.find((p) => p.slug === slug)
+}

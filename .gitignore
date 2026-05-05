@@ -1,0 +1,24 @@
+# Web
+web/.next/
+web/node_modules/
+web/.env.local
+
+# Python
+pipeline/__pycache__/
+pipeline/**/__pycache__/
+pipeline/output/
+pipeline/.env
+*.pyc
+*.pyo
+.venv/
+venv/
+.python-version
+
+# Secrets
+.env
+.env.local
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db

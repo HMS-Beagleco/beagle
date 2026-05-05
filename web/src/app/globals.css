@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --color-forest: #1B4332;
+  --color-sage: #52796F;
+  --color-sand: #D4C5A9;
+  --color-cream: #F5F1EB;
+  --color-green: #40916C;
+  --color-charcoal: #2D3436;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
