@@ -37,7 +37,7 @@ def fetch_observations(
     Automatically chunks by year to work around the API's 10,000-result cap.
     """
     if d1 is None:
-        d1 = date.today().replace(year=date.today().year - 5)
+        d1 = date(2024, 1, 1)
     if d2 is None:
         d2 = date.today()
 

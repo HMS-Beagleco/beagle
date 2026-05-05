@@ -1,0 +1,3446 @@
+{
+  "park_id": "denali",
+  "park_name": "Denali National Park",
+  "observation_count_total": 3540,
+  "observation_count_wildlife": 1623,
+  "alerts": [
+    {
+      "source": "nps_alert",
+      "park_code": "dena",
+      "title": "Road Open To: Mile 30 (Teklanika River)",
+      "description": "The Denali Park Road is open to Mile 30, Teklanika River. Please stay alert for heavy equipment traveling on the park road.",
+      "category": "Information",
+      "url": "https://www.nps.gov/dena/planyourvisit/shoulder-season.htm"
+    },
+    {
+      "source": "nps_alert",
+      "park_code": "dena",
+      "title": "Park Operations Altered Due to Pretty Rocks Landslide",
+      "description": "Summer access to facilities and services in Denali remains altered due to the Pretty Rocks Landslide and the associated closure of the Park Road at Mile 43. Check here for more information on what to expect.",
+      "category": "Park Closure",
+      "url": "https://www.nps.gov/dena/planyourvisit/conditions.htm"
+    }
+  ],
+  "trailheads": [
+    {
+      "id": "denali-1fe63b76",
+      "park_id": "denali",
+      "name": "Savage Alpine Trailhead",
+      "lat": 63.7158749,
+      "lng": -149.2549672,
+      "osm_id": 2690116434
+    },
+    {
+      "id": "denali-64550332",
+      "park_id": "denali",
+      "name": "Savage Cabin Interpretive Trailhead",
+      "lat": 63.7191114,
+      "lng": -149.2614995,
+      "osm_id": 2690116603
+    },
+    {
+      "id": "denali-f864eb7b",
+      "park_id": "denali",
+      "name": "Little Coal Creek Trailhead",
+      "lat": 62.8914781,
+      "lng": -149.7465151,
+      "osm_id": 2998152231
+    },
+    {
+      "id": "denali-15bafafd",
+      "park_id": "denali",
+      "name": "Tundra Loop Trailhead",
+      "lat": 63.4311762,
+      "lng": -150.3110769,
+      "osm_id": 10776727869
+    },
+    {
+      "id": "denali-85de6322",
+      "park_id": "denali",
+      "name": "Mckinley Bar Trailhead",
+      "lat": 63.4580967,
+      "lng": -150.8503028,
+      "osm_id": 13121936230
+    }
+  ],
+  "probability_matrix": [
+    {
+      "park_id": "denali",
+      "species_slug": "willow-ptarmigan",
+      "month": 7,
+      "score": 1.0,
+      "raw_count": 87,
+      "weighted_count": 174.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 8,
+      "score": 0.8621,
+      "raw_count": 75,
+      "weighted_count": 150.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "willow-ptarmigan",
+      "month": 8,
+      "score": 0.8161,
+      "raw_count": 71,
+      "weighted_count": 142.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "caribou",
+      "month": 8,
+      "score": 0.6897,
+      "raw_count": 60,
+      "weighted_count": 120.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 7,
+      "score": 0.6667,
+      "raw_count": 58,
+      "weighted_count": 116.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "willow-ptarmigan",
+      "month": 6,
+      "score": 0.5287,
+      "raw_count": 46,
+      "weighted_count": 92.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "caribou",
+      "month": 7,
+      "score": 0.5057,
+      "raw_count": 44,
+      "weighted_count": 88.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "caribou",
+      "month": 5,
+      "score": 0.5057,
+      "raw_count": 44,
+      "weighted_count": 88.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 6,
+      "score": 0.4943,
+      "raw_count": 43,
+      "weighted_count": 86.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "willow-ptarmigan",
+      "month": 5,
+      "score": 0.4828,
+      "raw_count": 42,
+      "weighted_count": 84.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "brown-bear",
+      "month": 8,
+      "score": 0.4598,
+      "raw_count": 40,
+      "weighted_count": 80.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "caribou",
+      "month": 6,
+      "score": 0.4483,
+      "raw_count": 39,
+      "weighted_count": 78.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "moose",
+      "month": 8,
+      "score": 0.4253,
+      "raw_count": 37,
+      "weighted_count": 74.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "moose",
+      "month": 6,
+      "score": 0.3218,
+      "raw_count": 28,
+      "weighted_count": 56.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 5,
+      "score": 0.2644,
+      "raw_count": 23,
+      "weighted_count": 46.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "brown-bear",
+      "month": 7,
+      "score": 0.2644,
+      "raw_count": 23,
+      "weighted_count": 46.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 9,
+      "score": 0.2414,
+      "raw_count": 21,
+      "weighted_count": 42.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dalls-sheep",
+      "month": 5,
+      "score": 0.2299,
+      "raw_count": 20,
+      "weighted_count": 40.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "collared-pika",
+      "month": 8,
+      "score": 0.2184,
+      "raw_count": 19,
+      "weighted_count": 38.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "short-billed-gull",
+      "month": 7,
+      "score": 0.2069,
+      "raw_count": 18,
+      "weighted_count": 36.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-billed-magpie",
+      "month": 8,
+      "score": 0.1954,
+      "raw_count": 17,
+      "weighted_count": 34.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "grizzly-bear",
+      "month": 8,
+      "score": 0.1839,
+      "raw_count": 16,
+      "weighted_count": 32.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "white-crowned-sparrow",
+      "month": 8,
+      "score": 0.1839,
+      "raw_count": 16,
+      "weighted_count": 32.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "moose",
+      "month": 5,
+      "score": 0.1724,
+      "raw_count": 15,
+      "weighted_count": 30.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "porcupine-caribou",
+      "month": 8,
+      "score": 0.1724,
+      "raw_count": 15,
+      "weighted_count": 30.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "willow-ptarmigan",
+      "month": 9,
+      "score": 0.1724,
+      "raw_count": 15,
+      "weighted_count": 30.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "moose",
+      "month": 7,
+      "score": 0.1609,
+      "raw_count": 14,
+      "weighted_count": 28.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "thinhorn-sheep",
+      "month": 6,
+      "score": 0.1609,
+      "raw_count": 14,
+      "weighted_count": 28.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "white-crowned-sparrow",
+      "month": 7,
+      "score": 0.1609,
+      "raw_count": 14,
+      "weighted_count": 28.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dalls-sheep",
+      "month": 8,
+      "score": 0.1494,
+      "raw_count": 13,
+      "weighted_count": 26.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "short-billed-gull",
+      "month": 6,
+      "score": 0.1494,
+      "raw_count": 13,
+      "weighted_count": 26.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "thinhorn-sheep",
+      "month": 8,
+      "score": 0.1494,
+      "raw_count": 13,
+      "weighted_count": 26.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "brown-bear",
+      "month": 6,
+      "score": 0.1379,
+      "raw_count": 12,
+      "weighted_count": 24.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dalls-sheep",
+      "month": 7,
+      "score": 0.1379,
+      "raw_count": 12,
+      "weighted_count": 24.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "north-american-porcupine",
+      "month": 5,
+      "score": 0.1379,
+      "raw_count": 12,
+      "weighted_count": 24.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-jay",
+      "month": 6,
+      "score": 0.1264,
+      "raw_count": 11,
+      "weighted_count": 22.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dalls-sheep",
+      "month": 6,
+      "score": 0.1264,
+      "raw_count": 11,
+      "weighted_count": 22.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "collared-pika",
+      "month": 7,
+      "score": 0.1149,
+      "raw_count": 10,
+      "weighted_count": 20.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dalls-sheep",
+      "month": 9,
+      "score": 0.1149,
+      "raw_count": 10,
+      "weighted_count": 20.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "moose",
+      "month": 9,
+      "score": 0.1149,
+      "raw_count": 10,
+      "weighted_count": 20.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-billed-magpie",
+      "month": 7,
+      "score": 0.1034,
+      "raw_count": 9,
+      "weighted_count": 18.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "brown-bear",
+      "month": 9,
+      "score": 0.1034,
+      "raw_count": 9,
+      "weighted_count": 18.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "brown-bear",
+      "month": 5,
+      "score": 0.1034,
+      "raw_count": 9,
+      "weighted_count": 18.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 9,
+      "score": 0.1034,
+      "raw_count": 9,
+      "weighted_count": 18.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 8,
+      "score": 0.1034,
+      "raw_count": 9,
+      "weighted_count": 18.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "thinhorn-sheep",
+      "month": 7,
+      "score": 0.1034,
+      "raw_count": 9,
+      "weighted_count": 18.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-billed-magpie",
+      "month": 9,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-jay",
+      "month": 9,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-jay",
+      "month": 8,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "grizzly-bear",
+      "month": 7,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "grizzly-bear",
+      "month": 6,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "north-american-porcupine",
+      "month": 8,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-fox",
+      "month": 7,
+      "score": 0.092,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 9,
+      "score": 0.0805,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-hawk-owl",
+      "month": 9,
+      "score": 0.0805,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-fox",
+      "month": 8,
+      "score": 0.0805,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "short-billed-gull",
+      "month": 8,
+      "score": 0.0805,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "snowshoe-hare",
+      "month": 8,
+      "score": 0.0805,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "white-crowned-sparrow",
+      "month": 6,
+      "score": 0.0805,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-jay",
+      "month": 7,
+      "score": 0.069,
+      "raw_count": 6,
+      "weighted_count": 12.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "collared-pika",
+      "month": 6,
+      "score": 0.069,
+      "raw_count": 6,
+      "weighted_count": 12.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "golden-eagle",
+      "month": 8,
+      "score": 0.069,
+      "raw_count": 6,
+      "weighted_count": 12.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "north-american-porcupine",
+      "month": 6,
+      "score": 0.069,
+      "raw_count": 6,
+      "weighted_count": 12.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "short-billed-gull",
+      "month": 5,
+      "score": 0.069,
+      "raw_count": 6,
+      "weighted_count": 12.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-pipit",
+      "month": 8,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-red-squirrel",
+      "month": 8,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-red-squirrel",
+      "month": 6,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-billed-magpie",
+      "month": 6,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "caribou",
+      "month": 4,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-raven",
+      "month": 9,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-raven",
+      "month": 7,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "gray-wolf",
+      "month": 8,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "grizzly-bear",
+      "month": 9,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "hoary-marmot",
+      "month": 7,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "savannah-sparrow",
+      "month": 7,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 5,
+      "score": 0.0575,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-red-squirrel",
+      "month": 9,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-red-squirrel",
+      "month": 7,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "collared-pika",
+      "month": 9,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-raven",
+      "month": 6,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "golden-eagle",
+      "month": 9,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "merlin",
+      "month": 8,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-hawk-owl",
+      "month": 8,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "orange-crowned-warbler",
+      "month": 8,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "savannah-sparrow",
+      "month": 8,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "snowshoe-hare",
+      "month": 9,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "thinhorn-sheep",
+      "month": 5,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "willow-ptarmigan",
+      "month": 4,
+      "score": 0.046,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 8,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-beaver",
+      "month": 7,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-beaver",
+      "month": 6,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-capped-chickadee",
+      "month": 8,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-jay",
+      "month": 5,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "caribou",
+      "month": 9,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "golden-eagle",
+      "month": 7,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "golden-eagle",
+      "month": 6,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "green-winged-teal",
+      "month": 5,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "lesser-yellowlegs",
+      "month": 5,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-harrier",
+      "month": 8,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "porcupine-caribou",
+      "month": 6,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "porcupine-caribou",
+      "month": 7,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-fox",
+      "month": 6,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "rock-ptarmigan",
+      "month": 6,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "sharp-shinned-hawk",
+      "month": 8,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "short-eared-owl",
+      "month": 8,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "white-crowned-sparrow",
+      "month": 5,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "wilsons-warbler",
+      "month": 8,
+      "score": 0.0345,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 3,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-beaver",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-tree-sparrow",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-tree-sparrow",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-tree-sparrow",
+      "month": 6,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-warbler",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-billed-magpie",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "boreal-chickadee",
+      "month": 9,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "boreal-chickadee",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "bufflehead",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-raven",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dark-eyed-junco",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "golden-eagle",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "gray-wolf",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "gray-wolf",
+      "month": 6,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "great-horned-owl",
+      "month": 9,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "green-winged-teal",
+      "month": 9,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "grizzly-bear",
+      "month": 4,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "harlequin-duck",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "hoary-marmot",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "mallard",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "merlin",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "moose",
+      "month": 3,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-harrier",
+      "month": 6,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-wheatear",
+      "month": 8,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "orange-crowned-warbler",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-fox",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-necked-phalarope",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "ring-necked-duck",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "snowshoe-hare",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "snowshoe-hare",
+      "month": 6,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "snowshoe-hare",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "violet-green-swallow",
+      "month": 7,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "yellow-rumped-warbler",
+      "month": 5,
+      "score": 0.023,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "alaskan-moose",
+      "month": 4,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-black-bear",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-golden-plover",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-goshawk",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-goshawk",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-red-squirrel",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-red-squirrel",
+      "month": 2,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-robin",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-robin",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-three-toed-woodpecker",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-three-toed-woodpecker",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-tree-sparrow",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-wigeon",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "american-wigeon",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 4,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "bald-eagle",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "bald-eagle",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "barrows-goldeneye",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "black-backed-woodpecker",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "blackpoll-warbler",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "bohemian-waxwing",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "boreal-chickadee",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "brown-bear",
+      "month": 4,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "bufflehead",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-lynx",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "canada-lynx",
+      "month": 3,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "collared-pika",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-loon",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-raven",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "common-raven",
+      "month": 3,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dark-eyed-junco",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "dark-eyed-junco",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "fox-sparrow",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "fox-sparrow",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "gambels-white-crowned-sparrow",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "gray-cheeked-thrush",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "gray-wolf",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "great-horned-owl",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "great-horned-owl",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "green-winged-teal",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "grizzly-bear",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "harlequin-duck",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "harlequin-duck",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "hoary-marmot",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "hudsonian-whimbrel",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "lincolns-sparrow",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "lincolns-sparrow",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "long-tailed-duck",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "long-tailed-duck",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "long-tailed-jaeger",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "long-tailed-jaeger",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "merlin",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "myrtle-warbler",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "north-american-golden-eagle",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "north-american-porcupine",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "north-american-porcupine",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-harrier",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-shoveler",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-shoveler",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-shrike",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-shrike",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-wheatear",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-yellow-warbler",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "northern-yellow-warbler",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "pectoral-sandpiper",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "peregrine-falcon",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "porcupine-caribou",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "ptarmigans",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-fox",
+      "month": 10,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-necked-phalarope",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "red-tailed-hawk",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "redpoll",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "redpoll",
+      "month": 4,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "ruby-crowned-kinglet",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "sandhill-crane",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "savannah-sparrow",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "savannah-sparrow",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "semipalmated-plover",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "sharp-tailed-grouse",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "short-eared-owl",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "snow-goose",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spotted-sandpiper",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spotted-sandpiper",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spotted-sandpiper",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spotted-sandpiper",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 10,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "spruce-grouse",
+      "month": 4,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "surfbird",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "townsends-solitaire",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "trumpeter-swan",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "trumpeter-swan",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "varied-thrush",
+      "month": 9,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "violet-green-swallow",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "white-winged-crossbill",
+      "month": 8,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "white-winged-crossbill",
+      "month": 5,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "wilsons-warbler",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "wolverine",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "wood-frog",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "wood-frog",
+      "month": 6,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "park_id": "denali",
+      "species_slug": "yellow-rumped-warbler",
+      "month": 7,
+      "score": 0.0115,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    }
+  ],
+  "trailhead_probability": [
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 6,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 8,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "brown-bear",
+      "month": 6,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "golden-eagle",
+      "month": 8,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "hoary-marmot",
+      "month": 7,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "moose",
+      "month": 6,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "moose",
+      "month": 8,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "north-american-porcupine",
+      "month": 8,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-15bafafd",
+      "species_slug": "willow-ptarmigan",
+      "month": 8,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "moose",
+      "month": 8,
+      "score": 1.0,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "willow-ptarmigan",
+      "month": 7,
+      "score": 1.0,
+      "raw_count": 45,
+      "weighted_count": 90.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "american-beaver",
+      "month": 6,
+      "score": 1.0,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-f864eb7b",
+      "species_slug": "moose",
+      "month": 6,
+      "score": 1.0,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "caribou",
+      "month": 8,
+      "score": 0.875,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "american-red-squirrel",
+      "month": 9,
+      "score": 0.5,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "canada-jay",
+      "month": 9,
+      "score": 0.5,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "spruce-grouse",
+      "month": 9,
+      "score": 0.5,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "willow-ptarmigan",
+      "month": 7,
+      "score": 0.5,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "american-beaver",
+      "month": 8,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "barrows-goldeneye",
+      "month": 6,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "caribou",
+      "month": 5,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "common-loon",
+      "month": 7,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "red-fox",
+      "month": 8,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "willow-ptarmigan",
+      "month": 8,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-85de6322",
+      "species_slug": "wood-frog",
+      "month": 7,
+      "score": 0.5,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 8,
+      "score": 0.4667,
+      "raw_count": 21,
+      "weighted_count": 42.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 7,
+      "score": 0.4222,
+      "raw_count": 19,
+      "weighted_count": 38.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 6,
+      "score": 0.3778,
+      "raw_count": 17,
+      "weighted_count": 34.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "moose",
+      "month": 9,
+      "score": 0.375,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "snowshoe-hare",
+      "month": 9,
+      "score": 0.375,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "short-billed-gull",
+      "month": 7,
+      "score": 0.3556,
+      "raw_count": 16,
+      "weighted_count": 32.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "collared-pika",
+      "month": 8,
+      "score": 0.3111,
+      "raw_count": 14,
+      "weighted_count": 28.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "willow-ptarmigan",
+      "month": 8,
+      "score": 0.2889,
+      "raw_count": 13,
+      "weighted_count": 26.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "willow-ptarmigan",
+      "month": 6,
+      "score": 0.2667,
+      "raw_count": 12,
+      "weighted_count": 24.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "alaskan-moose",
+      "month": 9,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "alaskan-moose",
+      "month": 8,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "canada-jay",
+      "month": 8,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "canada-jay",
+      "month": 6,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "caribou",
+      "month": 5,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "grizzly-bear",
+      "month": 4,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "moose",
+      "month": 6,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "moose",
+      "month": 5,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "snowshoe-hare",
+      "month": 8,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "spruce-grouse",
+      "month": 8,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "willow-ptarmigan",
+      "month": 6,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "willow-ptarmigan",
+      "month": 4,
+      "score": 0.25,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "black-billed-magpie",
+      "month": 8,
+      "score": 0.2444,
+      "raw_count": 11,
+      "weighted_count": 22.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "collared-pika",
+      "month": 7,
+      "score": 0.2222,
+      "raw_count": 10,
+      "weighted_count": 20.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "short-billed-gull",
+      "month": 6,
+      "score": 0.2222,
+      "raw_count": 10,
+      "weighted_count": 20.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 5,
+      "score": 0.1778,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "willow-ptarmigan",
+      "month": 5,
+      "score": 0.1778,
+      "raw_count": 8,
+      "weighted_count": 16.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "black-billed-magpie",
+      "month": 7,
+      "score": 0.1556,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "caribou",
+      "month": 5,
+      "score": 0.1556,
+      "raw_count": 7,
+      "weighted_count": 14.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "alaskan-moose",
+      "month": 3,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "american-red-squirrel",
+      "month": 2,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "american-robin",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "american-three-toed-woodpecker",
+      "month": 6,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 6,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 8,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 7,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "black-backed-woodpecker",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "black-billed-magpie",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "black-billed-magpie",
+      "month": 8,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "boreal-chickadee",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "boreal-chickadee",
+      "month": 8,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "brown-bear",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "brown-bear",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "canada-jay",
+      "month": 7,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "canada-lynx",
+      "month": 6,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "canada-lynx",
+      "month": 3,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "caribou",
+      "month": 6,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "caribou",
+      "month": 4,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "common-raven",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "common-raven",
+      "month": 3,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "dark-eyed-junco",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "fox-sparrow",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "gray-cheeked-thrush",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "great-horned-owl",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "grizzly-bear",
+      "month": 6,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "northern-harrier",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "porcupine-caribou",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "ruby-crowned-kinglet",
+      "month": 9,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "sharp-shinned-hawk",
+      "month": 8,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "short-billed-gull",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "white-crowned-sparrow",
+      "month": 8,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "white-crowned-sparrow",
+      "month": 7,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "white-crowned-sparrow",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "willow-ptarmigan",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "willow-ptarmigan",
+      "month": 8,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-1fe63b76",
+      "species_slug": "yellow-rumped-warbler",
+      "month": 5,
+      "score": 0.125,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "caribou",
+      "month": 8,
+      "score": 0.1111,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "caribou",
+      "month": 7,
+      "score": 0.1111,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "white-crowned-sparrow",
+      "month": 8,
+      "score": 0.1111,
+      "raw_count": 5,
+      "weighted_count": 10.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "black-billed-magpie",
+      "month": 9,
+      "score": 0.0889,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "canada-jay",
+      "month": 7,
+      "score": 0.0889,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "collared-pika",
+      "month": 9,
+      "score": 0.0889,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "collared-pika",
+      "month": 6,
+      "score": 0.0889,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "short-billed-gull",
+      "month": 5,
+      "score": 0.0889,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "thinhorn-sheep",
+      "month": 7,
+      "score": 0.0889,
+      "raw_count": 4,
+      "weighted_count": 8.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "arctic-ground-squirrel",
+      "month": 9,
+      "score": 0.0667,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "brown-bear",
+      "month": 8,
+      "score": 0.0667,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "merlin",
+      "month": 8,
+      "score": 0.0667,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "snowshoe-hare",
+      "month": 8,
+      "score": 0.0667,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "white-crowned-sparrow",
+      "month": 6,
+      "score": 0.0667,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "white-crowned-sparrow",
+      "month": 7,
+      "score": 0.0667,
+      "raw_count": 3,
+      "weighted_count": 6.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "american-pipit",
+      "month": 8,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "black-billed-magpie",
+      "month": 6,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "brown-bear",
+      "month": 5,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "caribou",
+      "month": 6,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "north-american-porcupine",
+      "month": 8,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "northern-wheatear",
+      "month": 8,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "orange-crowned-warbler",
+      "month": 8,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "short-billed-gull",
+      "month": 8,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "spruce-grouse",
+      "month": 7,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "thinhorn-sheep",
+      "month": 8,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "willow-ptarmigan",
+      "month": 9,
+      "score": 0.0444,
+      "raw_count": 2,
+      "weighted_count": 4.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "american-beaver",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "american-red-squirrel",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "american-red-squirrel",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "american-tree-sparrow",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "american-tree-sparrow",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "black-billed-magpie",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "black-capped-chickadee",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "boreal-chickadee",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "canada-jay",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "canada-jay",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "common-raven",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "common-raven",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "dalls-sheep",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "dalls-sheep",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "dalls-sheep",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "dalls-sheep",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "fox-sparrow",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "gambels-white-crowned-sparrow",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "golden-eagle",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "golden-eagle",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "great-horned-owl",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "great-horned-owl",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "great-horned-owl",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "green-winged-teal",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "grizzly-bear",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "grizzly-bear",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "harlequin-duck",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "harlequin-duck",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "harlequin-duck",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "hoary-marmot",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "hoary-marmot",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "lincolns-sparrow",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "merlin",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "moose",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "moose",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "myrtle-warbler",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "northern-harrier",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "northern-wheatear",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "porcupine-caribou",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "porcupine-caribou",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "red-fox",
+      "month": 10,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "red-fox",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "red-fox",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "rock-ptarmigan",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "savannah-sparrow",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "savannah-sparrow",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "sharp-shinned-hawk",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "snow-goose",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "snowshoe-hare",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "snowshoe-hare",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "snowshoe-hare",
+      "month": 6,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "spotted-sandpiper",
+      "month": 7,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "spotted-sandpiper",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "spruce-grouse",
+      "month": 9,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "spruce-grouse",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "spruce-grouse",
+      "month": 10,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "townsends-solitaire",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "white-crowned-sparrow",
+      "month": 5,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    },
+    {
+      "trailhead_id": "denali-64550332",
+      "species_slug": "wilsons-warbler",
+      "month": 8,
+      "score": 0.0222,
+      "raw_count": 1,
+      "weighted_count": 2.0
+    }
+  ]
+}
