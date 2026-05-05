@@ -10,8 +10,8 @@ Usage:
 import argparse
 import json
 import logging
-import os
 import sys
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -20,8 +20,10 @@ load_dotenv(Path(__file__).parent / ".env")
 from ingest.inat import fetch_observations
 from ingest.ebird import fetch_recent_observations
 from ingest.nps import fetch_alerts
+from ingest.overpass import fetch_trailheads
 from transform.normalize import enrich_observation, deduplicate_by_source_id, is_wildlife
 from score.probability import build_probability_matrix
+from score.trailhead_probability import build_trailhead_probability_matrix
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -43,6 +45,11 @@ def run_park(park: dict, skip_ebird: bool = False) -> dict:
     park_id = park["id"]
     bbox = park["bbox"]
     logger.info("=== %s ===", park["name"])
+
+    # Trailheads from OpenStreetMap
+    logger.info("Fetching trailheads from OpenStreetMap...")
+    trailheads = fetch_trailheads(bbox, park_id)
+    time.sleep(2)  # Overpass rate limit
 
     # iNaturalist observations
     logger.info("Fetching iNaturalist observations...")
@@ -73,11 +80,13 @@ def run_park(park: dict, skip_ebird: bool = False) -> dict:
         len(wildlife), len(enriched) - len(wildlife),
     )
 
-    # Score
+    # Park-level scores
     scores = build_probability_matrix(wildlife)
 
-    # Serialize to JSON
-    matrix = [s._asdict() for s in scores]
+    # Trailhead-level scores
+    logger.info("Scoring trailhead wildlife probabilities...")
+    th_scores = build_trailhead_probability_matrix(wildlife, trailheads)
+    logger.info("  %d trailhead × species × month scores", len(th_scores))
 
     result = {
         "park_id": park_id,
@@ -85,20 +94,20 @@ def run_park(park: dict, skip_ebird: bool = False) -> dict:
         "observation_count_total": len(enriched),
         "observation_count_wildlife": len(wildlife),
         "alerts": alerts,
-        "probability_matrix": matrix,
+        "trailheads": trailheads,
+        "probability_matrix": [s._asdict() for s in scores],
+        "trailhead_probability": [s._asdict() for s in th_scores],
     }
 
     payload = json.dumps(result, indent=2, default=str)
 
     OUTPUT_DIR.mkdir(exist_ok=True)
-    out_path = OUTPUT_DIR / f"{park_id}.json"
-    out_path.write_text(payload)
+    (OUTPUT_DIR / f"{park_id}.json").write_text(payload)
 
     WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    web_path = WEB_DATA_DIR / f"{park_id}.json"
-    web_path.write_text(payload)
+    (WEB_DATA_DIR / f"{park_id}.json").write_text(payload)
 
-    logger.info("  Written to %s and %s", out_path, web_path)
+    logger.info("  Written to output/%s.json", park_id)
     return result
 
 

@@ -109,6 +109,36 @@ def seed_species_and_scores(client, park_id: str, matrix: list[dict]):
         logger.info("    batch %d / %d", min(i + batch_size, len(rows)), len(rows))
 
 
+def seed_trailheads(client, trailheads: list[dict]):
+    if not trailheads:
+        return
+    logger.info("  Upserting %d trailheads", len(trailheads))
+    batch_size = 200
+    for i in range(0, len(trailheads), batch_size):
+        client.table("trailheads").upsert(trailheads[i : i + batch_size]).execute()
+
+
+def seed_trailhead_scores(client, scores: list[dict]):
+    if not scores:
+        return
+    logger.info("  Upserting %d trailhead probability scores", len(scores))
+    rows = [
+        {
+            "trailhead_id": s["trailhead_id"],
+            "species_id": s["species_slug"],
+            "month": s["month"],
+            "score": s["score"],
+            "raw_count": s["raw_count"],
+            "weighted_count": s["weighted_count"],
+        }
+        for s in scores
+    ]
+    batch_size = 500
+    for i in range(0, len(rows), batch_size):
+        client.table("trailhead_probability").upsert(rows[i : i + batch_size]).execute()
+        logger.info("    batch %d / %d", min(i + batch_size, len(rows)), len(rows))
+
+
 def main():
     parser = argparse.ArgumentParser(description="Seed Supabase from pipeline output")
     group = parser.add_mutually_exclusive_group(required=True)
@@ -139,6 +169,8 @@ def main():
         logger.info("=== Seeding %s ===", park_id)
         seed_park(client, park_config, data)
         seed_species_and_scores(client, park_id, data["probability_matrix"])
+        seed_trailheads(client, data.get("trailheads", []))
+        seed_trailhead_scores(client, data.get("trailhead_probability", []))
         logger.info("  Done.")
 
     logger.info("All done.")

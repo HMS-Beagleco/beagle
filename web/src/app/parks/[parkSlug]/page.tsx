@@ -3,8 +3,16 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { LAUNCH_PARKS, getParkBySlug } from '@/lib/parks'
 import { MONTH_NAMES } from '@/types'
-import { getParkSpecies, getParkAlerts, hasParkData } from '@/lib/data'
+import {
+  getParkSpecies,
+  getParkAlerts,
+  getParkTrailheads,
+  getTrailheadScores,
+  getParkCenter,
+  hasParkData,
+} from '@/lib/data'
 import SpeciesCard from '@/components/wildlife/SpeciesCard'
+import ParkMapSection from '@/components/maps/ParkMapSection'
 
 export async function generateStaticParams() {
   return LAUNCH_PARKS.map((park) => ({ parkSlug: park.slug }))
@@ -28,7 +36,11 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
   const hasData = hasParkData(park.slug)
   const allSpecies = hasData ? getParkSpecies(park.slug) : []
   const alerts = hasData ? getParkAlerts(park.slug) : []
+  const trailheads = hasData ? getParkTrailheads(park.slug) : []
+  const trailheadScores = hasData ? getTrailheadScores(park.slug) : []
+  const parkCenter = hasData ? getParkCenter(park.slug) : [(park.bounding_box.north + park.bounding_box.south) / 2, (park.bounding_box.east + park.bounding_box.west) / 2] as [number, number]
   const topSpecies = allSpecies.slice(0, 12)
+  const currentMonth = new Date().getMonth() + 1
   const months = Object.entries(MONTH_NAMES) as [string, string][]
 
   return (
@@ -58,6 +70,26 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
         </div>
       )}
 
+      {/* Wildlife Map */}
+      <section className="mb-14">
+        <div className="flex items-baseline justify-between mb-6">
+          <h2 className="text-xl font-[var(--font-fraunces)] text-[#1B4332]">
+            Wildlife by Trailhead
+          </h2>
+          {trailheads.length > 0 && (
+            <p className="text-sm text-[#52796F]">{trailheads.length} trailheads</p>
+          )}
+        </div>
+        <ParkMapSection
+          trailheads={trailheads}
+          trailheadScores={trailheadScores}
+          topSpecies={topSpecies}
+          parkCenter={parkCenter}
+          parkZoom={10}
+          initialMonth={currentMonth}
+        />
+      </section>
+
       {/* Browse by Month */}
       <section className="mb-14">
         <h2 className="text-xl font-[var(--font-fraunces)] text-[#1B4332] mb-4">Browse by Month</h2>
@@ -79,16 +111,11 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
       {/* Top Wildlife */}
       <section>
         <div className="flex items-baseline justify-between mb-6">
-          <h2 className="text-xl font-[var(--font-fraunces)] text-[#1B4332]">
-            Top Wildlife
-          </h2>
+          <h2 className="text-xl font-[var(--font-fraunces)] text-[#1B4332]">Top Wildlife</h2>
           {hasData && (
-            <p className="text-sm text-[#52796F]">
-              {allSpecies.length} species tracked
-            </p>
+            <p className="text-sm text-[#52796F]">{allSpecies.length} species tracked</p>
           )}
         </div>
-
         {!hasData ? (
           <div className="border border-[#D4C5A9] rounded-xl p-8 bg-white text-center">
             <p className="text-[#52796F] font-mono text-sm">Data pipeline in progress</p>
@@ -102,13 +129,13 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
         )}
       </section>
 
-      {/* Data source callout */}
       {hasData && (
         <div className="mt-12 border border-[#D4C5A9] rounded-xl p-6 bg-white">
           <p className="text-xs font-mono text-[#52796F] uppercase tracking-widest mb-2">Data Sources</p>
           <p className="text-sm text-[#2D3436]">
             Wildlife probability scores are derived from iNaturalist research-grade observations
             and eBird frequency data, aggregated over 5 years with recency weighting.
+            Trailhead locations from OpenStreetMap.
           </p>
         </div>
       )}

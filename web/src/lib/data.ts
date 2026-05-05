@@ -13,13 +13,33 @@ export interface ProbabilityRow {
   weighted_count: number
 }
 
+export interface Trailhead {
+  id: string
+  park_id: string
+  name: string
+  lat: number
+  lng: number
+  osm_id?: number
+}
+
+export interface TrailheadScore {
+  trailhead_id: string
+  species_slug: string
+  month: number
+  score: number
+  raw_count: number
+  weighted_count: number
+}
+
 export interface ParkData {
   park_id: string
   park_name: string
   observation_count_total: number
   observation_count_wildlife: number
   alerts: NpsAlert[]
+  trailheads: Trailhead[]
   probability_matrix: ProbabilityRow[]
+  trailhead_probability: TrailheadScore[]
 }
 
 export interface NpsAlert {
@@ -92,6 +112,27 @@ export function getSpeciesSeasonality(
       score: row?.score ?? 0,
     }
   })
+}
+
+export function getParkTrailheads(parkId: string): Trailhead[] {
+  const data = loadParkData(parkId)
+  return data?.trailheads ?? []
+}
+
+export function getTrailheadScores(parkId: string): TrailheadScore[] {
+  const data = loadParkData(parkId)
+  return data?.trailhead_probability ?? []
+}
+
+export function getParkCenter(parkId: string): [number, number] {
+  const data = loadParkData(parkId)
+  if (!data || !data.trailheads?.length) return [44.5, -110.5]
+  const lats = data.trailheads.map((t) => t.lat)
+  const lngs = data.trailheads.map((t) => t.lng)
+  return [
+    (Math.min(...lats) + Math.max(...lats)) / 2,
+    (Math.min(...lngs) + Math.max(...lngs)) / 2,
+  ]
 }
 
 export function getParkAlerts(parkId: string): NpsAlert[] {
