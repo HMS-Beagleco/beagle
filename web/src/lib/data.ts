@@ -143,3 +143,118 @@ export function getParkAlerts(parkId: string): NpsAlert[] {
 export function hasParkData(parkId: string): boolean {
   return fs.existsSync(path.join(DATA_DIR, `${parkId}.json`))
 }
+
+// Mirrors the pipeline's CANONICAL_SLUGS map so current JSON data is also deduplicated.
+// null = exclude (taxonomic group node, not an identifiable species).
+const CANONICAL_SLUGS: Record<string, string | null> = {
+  'american-black-bear': 'black-bear', 'california-black-bear': 'black-bear',
+  'eastern-black-bear': 'black-bear', 'pacific-black-bear': 'black-bear',
+  'brown-bear': 'grizzly-bear', 'holarctic-bears': null,
+  'shiras-moose': 'moose', 'alaskan-moose': 'moose',
+  'rocky-mountain-mule-deer': 'mule-deer', 'california-mule-deer': 'mule-deer',
+  'northern-white-tailed-deer': 'white-tailed-deer',
+  'northern-rocky-mountains-white-tailed-deer': 'white-tailed-deer',
+  'virginia-white-tailed-deer': 'white-tailed-deer',
+  'florida-white-tailed-deer': 'white-tailed-deer',
+  'northern-bald-eagle': 'bald-eagle', 'north-american-golden-eagle': 'golden-eagle',
+  'northwestern-wolf': 'gray-wolf',
+  'eastern-american-red-fox': 'red-fox', 'rocky-mountain-red-fox': 'red-fox',
+  'typical-foxes': null,
+  'eastern-red-tailed-hawk': 'red-tailed-hawk', 'western-red-tailed-hawk': 'red-tailed-hawk',
+  'florida-red-tailed-hawk': 'red-tailed-hawk',
+  'northern-sharp-shinned-hawk': 'sharp-shinned-hawk',
+  'northern-broad-winged-hawk': 'broad-winged-hawk',
+  'california-red-shouldered-hawk': 'red-shouldered-hawk',
+  'florida-red-shouldered-hawk': 'red-shouldered-hawk',
+  'eastern-green-heron': 'green-heron',
+  'american-great-gray-owl': 'great-gray-owl', 'northern-barred-owl': 'barred-owl',
+  'gray-canada-jay': 'canada-jay', 'rocky-mountain-jay': 'canada-jay', 'oregon-jay': 'canada-jay',
+  'black-headed-stellers-jay': 'stellers-jay', 'blue-fronted-stellers-jay': 'stellers-jay',
+  'long-crested-stellers-jay': 'stellers-jay',
+  'eastern-hairy-woodpecker': 'hairy-woodpecker',
+  'northern-pileated-woodpecker': 'pileated-woodpecker',
+  'southern-pileated-woodpecker': 'pileated-woodpecker',
+  'rocky-mts-three-toed-woodpecker': 'american-three-toed-woodpecker',
+  'pied-woodpeckers-and-allies': null,
+  'eastern-song-sparrow': 'song-sparrow', 'mountain-song-sparrow': 'song-sparrow',
+  'eastern-chipping-sparrow': 'chipping-sparrow', 'western-chipping-sparrow': 'chipping-sparrow',
+  'eastern-field-sparrow': 'field-sparrow',
+  'gambels-white-crowned-sparrow': 'white-crowned-sparrow',
+  'mountain-white-crowned-sparrow': 'white-crowned-sparrow',
+  'montane-lincolns-sparrow': 'lincolns-sparrow',
+  'south-florida-blue-jay': 'blue-jay', 'spizella-sparrows': null,
+  'aleutian-sooty-fox-sparrow': 'fox-sparrow', 'mono-thick-billed-fox-sparrow': 'fox-sparrow',
+  'audubons-warbler': 'yellow-rumped-warbler', 'myrtle-warbler': 'yellow-rumped-warbler',
+  'northern-yellow-warbler': 'yellow-warbler', 'rocky-mountain-yellow-warbler': 'yellow-warbler',
+  'western-palm-warbler': 'palm-warbler',
+  'mole-salamanders': null, 'deirochelyine-turtles': null, 'watersnakes': null,
+  'spiny-lizards': null, 'pine-squirrels': null, 'long-tailed-ground-squirrels': null,
+  'american-water-frogs': null,
+}
+
+function canonicalSlug(slug: string): string | null {
+  return slug in CANONICAL_SLUGS ? CANONICAL_SLUGS[slug] : slug
+}
+
+export interface CrossParkSpecies {
+  slug: string
+  name: string
+  peakScore: number
+  peakMonth: number
+  bestPark: string
+  parkCount: number
+  currentMonthScore: number
+}
+
+export function getAllSpecies(currentMonth: number, parkIds: string[]): CrossParkSpecies[] {
+  // slug → { peakScore, peakMonth, bestPark, parks, currentMonthScore }
+  const map = new Map<string, {
+    peakScore: number; peakMonth: number; bestPark: string
+    parks: Set<string>; currentMonthScore: number
+  }>()
+
+  for (const parkId of parkIds) {
+    const data = loadParkData(parkId)
+    if (!data) continue
+
+    for (const row of data.probability_matrix) {
+      const slug = canonicalSlug(row.species_slug)
+      if (!slug) continue
+
+      const existing = map.get(slug)
+      const isCurrentMonth = row.month === currentMonth
+
+      if (!existing) {
+        map.set(slug, {
+          peakScore: row.score,
+          peakMonth: row.month,
+          bestPark: parkId,
+          parks: new Set([parkId]),
+          currentMonthScore: isCurrentMonth ? row.score : 0,
+        })
+      } else {
+        existing.parks.add(parkId)
+        if (row.score > existing.peakScore) {
+          existing.peakScore = row.score
+          existing.peakMonth = row.month
+          existing.bestPark = parkId
+        }
+        if (isCurrentMonth && row.score > existing.currentMonthScore) {
+          existing.currentMonthScore = row.score
+        }
+      }
+    }
+  }
+
+  return Array.from(map.entries())
+    .map(([slug, s]) => ({
+      slug,
+      name: slug.replace(/-/g, ' '),
+      peakScore: s.peakScore,
+      peakMonth: s.peakMonth,
+      bestPark: s.bestPark,
+      parkCount: s.parks.size,
+      currentMonthScore: s.currentMonthScore,
+    }))
+    .sort((a, b) => b.peakScore - a.peakScore)
+}

@@ -71,7 +71,7 @@ def run_park(park: dict, skip_ebird: bool = False) -> dict:
     # Combine, deduplicate, enrich
     all_obs = inat_obs + ebird_obs
     all_obs = deduplicate_by_source_id(all_obs)
-    enriched = [enrich_observation(o, park_id) for o in all_obs]
+    enriched = [e for o in all_obs if (e := enrich_observation(o, park_id)) is not None]
 
     # Filter to mammals, birds, reptiles, amphibians only
     wildlife = [o for o in enriched if is_wildlife(o["taxon_group"])]
