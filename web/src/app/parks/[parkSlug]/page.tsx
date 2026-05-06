@@ -11,10 +11,8 @@ import {
   getParkCenter,
   hasParkData,
 } from '@/lib/data'
-import { fetchParkWeather } from '@/lib/weather'
 import SpeciesCard from '@/components/wildlife/SpeciesCard'
 import ParkMapSection from '@/components/maps/ParkMapSection'
-import WeatherSection from '@/components/weather/WeatherSection'
 import { getSpotlightForPark } from '@/lib/spotlight'
 
 export async function generateStaticParams() {
@@ -47,9 +45,6 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
   const currentMonth = new Date().getMonth() + 1
   const months = Object.entries(MONTH_NAMES) as [string, string][]
 
-  const [weatherLat, weatherLng] = parkCenter
-  const weather = await fetchParkWeather(weatherLat, weatherLng)
-
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
       {/* Breadcrumb */}
@@ -76,9 +71,6 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
           ))}
         </div>
       )}
-
-      {/* Weather + Trail Conditions */}
-      {weather && <WeatherSection weather={weather} parkName={park.name} />}
 
       {/* Wildlife Map */}
       <section className="mb-14">
