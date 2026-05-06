@@ -112,6 +112,7 @@ The same map is mirrored in `web/src/lib/data.ts` for the cross-park aggregation
 | `/wildlife/[speciesSlug]` | Species across all parks: where and when to see it |
 
 ### Key components
+- `ConditionsSection` (`components/weather/`) — server component shown at the top of each park hub page. Two-column layout: left card is NOAA weather (current conditions + 5-day strip + trail condition estimate), right card is top 3 trailheads ranked by current-month wildlife score. Revalidates hourly via ISR.
 - `ParkMapSection` (`components/maps/`) — client component wrapping Leaflet map. Month selector, species filter with spotlight pills + "More species ▼" dropdown. Props: `trailheads`, `trailheadScores`, `topSpecies`, `spotlightSlugs`, `parkCenter`, `parkZoom`, `initialMonth`, `initialSpecies?`.
 - `ParkMap` — the actual Leaflet map, `ssr: false`.
 - `WildlifeSearch` — client component: real-time search bar + featured species cards.
@@ -128,6 +129,12 @@ The same map is mirrored in `web/src/lib/data.ts` for the cross-park aggregation
 - `getParkTrailheads(parkId)` / `getTrailheadScores(parkId)`
 - `getParkCenter(parkId)` → [lat, lng] from trailhead centroid
 - `getAllSpecies(currentMonth, parkIds)` → cross-park CrossParkSpecies[]
+
+### Weather layer
+`web/src/lib/weather.ts` (server-only). Key exports:
+- `fetchParkWeather(lat, lng)` → `ParkWeather | null` — hits `api.weather.gov/points/{lat},{lon}` then the returned forecast URL. No API key needed. Cached 2h/1h via `next: { revalidate }`.
+- `deriveTrailConditions(weather)` → single `TrailConditionEstimate` with `label`, `detail`, `severity` (clear/caution/warning).
+- `forecastEmoji(shortForecast)` → emoji string for display.
 
 ---
 
@@ -150,19 +157,23 @@ The Vercel CLI must be installed: `npm install -g vercel`
 
 **Built and live:**
 - All 10 launch parks with full wildlife data: Yellowstone, Grand Teton, Glacier, Rocky Mountain, Great Smoky Mountains, Yosemite, Olympic, Denali, Everglades, Acadia
-- Park hub pages with trailhead map, species toggles, NPS alerts, browse-by-month
+- Park hub pages with NPS alerts, conditions section, trailhead map, browse-by-month, top species grid
+- **Conditions section** (`ConditionsSection`) on every park hub — NOAA weather + top 3 trailheads ranked by current-month wildlife score, updates hourly
 - Species × park pages with seasonality chart, map pre-filtered to that species
 - Cross-park wildlife search/discovery tab
 - Affinity-based probability scoring (replaced naive observation counting)
 - Species deduplication / canonicalization (subspecies collapsed)
 - Charismatic species spotlight toggles on maps
 
-**Pending / next up:**
-1. **NOAA weather + trail conditions** — was built (weather.ts, WeatherSection.tsx) but reverted pending Vercel deploy issues. Ready to re-add: `fetchParkWeather(lat, lng)` calls `api.weather.gov/points/{lat},{lon}` then the returned forecast URL. No API key needed. `deriveTrailConditions(weather)` converts forecast to trail condition labels. Add `WeatherSection` component between NPS alerts and wildlife map on park hub page.
-2. **Sighting tips per species** — ecology/behavior hints (best time of day, habitat, behavior to watch for). Discussed but not started.
-3. **Trip planning component** — species + date → suggested trailhead itinerary with conditions. Discussed, not started.
-4. **Real-time sightings / user uploads** — Phase 3, requires Supabase Auth.
-5. **Fix Vercel auto-deploy** — GitHub integration connected to wrong repo for a long time. May need to be re-verified in Vercel dashboard Settings → Git.
+**Next session focus — trip planning + site flow cleanup:**
+1. **Trip planner** — user picks a park, a target species (or "best wildlife"), and a date range → system suggests an itinerary: which trailheads to visit, what time of day, expected conditions. Starting point: combine `getTrailheadScores`, `fetchParkWeather`, and month-based scoring. No user accounts needed for v1 — stateless, URL-shareable.
+2. **Website flow / UX cleanup** — the user wants to review and improve the overall navigation and page flow. Look at the full journey: home → park → species and home → wildlife → species → park, and identify friction points.
+3. **Sighting tips per species** — ecology/behavior hints (best time of day, habitat). Not started.
+4. **Real-time sightings / user uploads** — Phase 4, requires Supabase Auth.
+
+**Deployment:**
+- GitHub auto-deploy is unreliable (Vercel integration was connected to wrong repo; corrected but still flaky). Always deploy manually: `vercel --prod` from `Beagle/` root.
+- Vercel CLI is installed globally (`npm install -g vercel` was run in May 2026).
 
 ---
 
