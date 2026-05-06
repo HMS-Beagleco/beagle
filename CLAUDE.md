@@ -1,9 +1,12 @@
 # Beagle — Claude Context
 
+> **How to use this file:** This is auto-loaded by Claude Code at session start. Read it fully before touching any code. When context gets compressed mid-session, re-read this file (`Read /Users/scottcarpenter/Documents/Beagle/CLAUDE.md`) to re-orient. Keep sessions focused on one feature at a time to minimize compression.
+
 Beagle is a wildlife trail intelligence platform. Users pick a national park and a species (or browse what's active this month) and get probability scores for when and where to see that wildlife, down to individual trailheads.
 
 Live site: **https://beagle-guide.vercel.app**
 GitHub: **https://github.com/HMS-Beagleco/beagle**
+Repo root: `/Users/scottcarpenter/Documents/Beagle`
 
 ---
 
