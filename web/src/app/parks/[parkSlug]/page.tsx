@@ -11,8 +11,10 @@ import {
   getParkCenter,
   hasParkData,
 } from '@/lib/data'
+import { fetchParkWeather } from '@/lib/weather'
 import SpeciesCard from '@/components/wildlife/SpeciesCard'
 import ParkMapSection from '@/components/maps/ParkMapSection'
+import ConditionsSection from '@/components/weather/ConditionsSection'
 import { getSpotlightForPark } from '@/lib/spotlight'
 
 export async function generateStaticParams() {
@@ -39,11 +41,16 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
   const alerts = hasData ? getParkAlerts(park.slug) : []
   const trailheads = hasData ? getParkTrailheads(park.slug) : []
   const trailheadScores = hasData ? getTrailheadScores(park.slug) : []
-  const parkCenter = hasData ? getParkCenter(park.slug) : [(park.bounding_box.north + park.bounding_box.south) / 2, (park.bounding_box.east + park.bounding_box.west) / 2] as [number, number]
+  const parkCenter = hasData
+    ? getParkCenter(park.slug)
+    : [(park.bounding_box.north + park.bounding_box.south) / 2, (park.bounding_box.east + park.bounding_box.west) / 2] as [number, number]
   const topSpecies = allSpecies.slice(0, 12)
   const spotlightSlugs = getSpotlightForPark(allSpecies.map((s) => s.slug))
   const currentMonth = new Date().getMonth() + 1
   const months = Object.entries(MONTH_NAMES) as [string, string][]
+
+  const [weatherLat, weatherLng] = parkCenter
+  const weather = await fetchParkWeather(weatherLat, weatherLng)
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
@@ -70,6 +77,17 @@ export default async function ParkHubPage(props: PageProps<'/parks/[parkSlug]'>)
             </div>
           ))}
         </div>
+      )}
+
+      {/* Conditions: weather + best trailheads right now */}
+      {hasData && (
+        <ConditionsSection
+          weather={weather}
+          trailheads={trailheads}
+          trailheadScores={trailheadScores}
+          currentMonth={currentMonth}
+          parkSlug={park.slug}
+        />
       )}
 
       {/* Wildlife Map */}
