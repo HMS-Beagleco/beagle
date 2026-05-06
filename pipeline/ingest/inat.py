@@ -86,8 +86,17 @@ def _fetch_window(
 
     while page <= MAX_PAGE:
         params["page"] = page
-        resp = requests.get(f"{BASE_URL}/observations", params=params, timeout=30)
-        resp.raise_for_status()
+        for attempt in range(4):
+            try:
+                resp = requests.get(f"{BASE_URL}/observations", params=params, timeout=60)
+                resp.raise_for_status()
+                break
+            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+                if attempt == 3:
+                    raise
+                wait = 10 * (2 ** attempt)
+                logger.warning("iNat request timeout (attempt %d/4), retrying in %ds: %s", attempt + 1, wait, e)
+                time.sleep(wait)
         data = resp.json()
 
         results = data.get("results", [])
