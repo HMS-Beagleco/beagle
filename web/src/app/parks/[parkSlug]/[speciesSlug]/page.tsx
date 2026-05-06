@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getParkBySlug } from '@/lib/parks'
-import { getSpeciesSeasonality, hasParkData } from '@/lib/data'
+import { getSpeciesSeasonality, hasParkData, getParkSpecies, getParkTrailheads, getTrailheadScores, getParkCenter } from '@/lib/data'
 import SeasonalityChart from '@/components/wildlife/SeasonalityChart'
 import ScoreBadge from '@/components/wildlife/ScoreBadge'
+import ParkMapSection from '@/components/maps/ParkMapSection'
+import { getSpotlightForPark } from '@/lib/spotlight'
 
 export async function generateMetadata(
   props: PageProps<'/parks/[parkSlug]/[speciesSlug]'>
@@ -34,6 +36,16 @@ export default async function SpeciesParkPage(
     seasonality[0]
   )
   const hasSpeciesData = seasonality.some((m) => m.score > 0)
+  const currentMonth = new Date().getMonth() + 1
+
+  // Map data
+  const trailheads = hasData ? getParkTrailheads(park.slug) : []
+  const trailheadScores = hasData ? getTrailheadScores(park.slug) : []
+  const parkCenter = hasData ? getParkCenter(park.slug) : [(park.bounding_box.north + park.bounding_box.south) / 2, (park.bounding_box.east + park.bounding_box.west) / 2] as [number, number]
+  const allSpecies = hasData ? getParkSpecies(park.slug) : []
+  const spotlightSlugs = getSpotlightForPark(allSpecies.map((s) => s.slug))
+  // Check if this species has any trailhead data
+  const hasTrailheadData = trailheadScores.some((ts) => ts.species_slug === speciesSlug)
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
@@ -67,6 +79,25 @@ export default async function SpeciesParkPage(
               {peakEntry && <ScoreBadge score={peakEntry.score} />}
             </div>
           </div>
+
+          {/* Trailhead map — pre-filtered to this species */}
+          {hasTrailheadData && trailheads.length > 0 && (
+            <section className="mb-10">
+              <h2 className="text-lg font-[var(--font-fraunces)] text-[#1B4332] mb-4">
+                Best Trailheads for {speciesName}
+              </h2>
+              <ParkMapSection
+                trailheads={trailheads}
+                trailheadScores={trailheadScores}
+                topSpecies={allSpecies.slice(0, 20)}
+                spotlightSlugs={spotlightSlugs}
+                parkCenter={parkCenter}
+                parkZoom={10}
+                initialMonth={peakEntry?.month ?? currentMonth}
+                initialSpecies={speciesSlug}
+              />
+            </section>
+          )}
 
           {/* Seasonality chart */}
           <div className="border border-[#D4C5A9] rounded-xl p-6 bg-white mb-8">

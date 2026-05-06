@@ -80,12 +80,12 @@ def run_park(park: dict, skip_ebird: bool = False) -> dict:
         len(wildlife), len(enriched) - len(wildlife),
     )
 
-    # Park-level scores
-    scores = build_probability_matrix(wildlife)
+    # Park-level scores (returns detection rates + monthly rate dict for trailhead scorer)
+    scores, park_monthly_rates = build_probability_matrix(wildlife)
 
-    # Trailhead-level scores
+    # Trailhead-level scores (affinity model using park rates as prior)
     logger.info("Scoring trailhead wildlife probabilities...")
-    th_scores = build_trailhead_probability_matrix(wildlife, trailheads)
+    th_scores = build_trailhead_probability_matrix(wildlife, trailheads, park_monthly_rates)
     logger.info("  %d trailhead × species × month scores", len(th_scores))
 
     result = {
